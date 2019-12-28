@@ -86,6 +86,7 @@ class App extends React.Component {
 				});
 				clearInterval(this.handleInterval);
 				document.getElementById("timer-label").innerHTML = "Session number: 1";
+				this.min = 1;
 				if (!document.getElementById("beep").onpause) {
 					document.getElementById("beep").pause();
 					document.getElementById("beep").currentTime = 0;
@@ -135,7 +136,7 @@ class App extends React.Component {
 						<h1 style={{ fontSize: "82px" }}>Pomodoro <img src={tomato} alt="tomato" /> Clock</h1>
 						<div className="row">
 							<h2 id="timer-label" style={{ fontSize: "62px" }}>Session number: 1</h2>
-							<h2 id="time-left" style={{ fontSize: "42px", color: this.min < 1 ? "red" : "white" }}>{this.state.time}</h2>
+							<h2 id="time-left" className={this.min < 1 ? "blink_me" : ""} style={{ fontSize: "42px", color: this.min < 1 ? "red" : "white" }}>{this.state.time}</h2>
 							<br />
 						</div>
 						<div className="row box">
