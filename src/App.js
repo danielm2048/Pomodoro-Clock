@@ -131,58 +131,56 @@ class App extends React.Component {
 		return (
 			<div className="App">
 				<header className="App-header">
-					<h1 style={{fontSize: "82px"}}>Pomodoro <img src={tomato} alt="tomato" /> Clock</h1>
-					<div className="row">
-						<h2 id="timer-label" style={{fontSize: "62px"}}>Session number: 1</h2>
-						<h2 id="time-left" style={{fontSize: "42px", color: this.min < 1 ? "red" : "white"}}>{this.state.time}</h2>
-						<br />
-					</div>
-					<div className="row container">
-						<div className="col-xs-4" style={{ pointerEvents: this.state.isStarted ? "none" : "auto" }}>
-							<div className="">
-								<img src={arrowUp} id="break-increment" alt="break up" className="button" onClick={this.onClick} />
+					<div className="container-fluid">
+						<h1 style={{ fontSize: "82px" }}>Pomodoro <img src={tomato} alt="tomato" /> Clock</h1>
+						<div className="row">
+							<h2 id="timer-label" style={{ fontSize: "62px" }}>Session number: 1</h2>
+							<h2 id="time-left" style={{ fontSize: "42px", color: this.min < 1 ? "red" : "white" }}>{this.state.time}</h2>
+							<br />
+						</div>
+						<div className="row box">
+							<div className="col-xs-3" style={{ pointerEvents: this.state.isStarted ? "none" : "auto" }}>
+								<div className="">
+									<img src={arrowUp} id="break-increment" alt="break up" className="button" onClick={this.onClick} />
+								</div>
+								<div className="">
+									<h5 id="break-label" style={{ fontSize: "32px" }}>Break Length</h5>
+								</div>
+								<div>
+									<h5 id="break-length" style={{ fontSize: "32px" }}>{this.state.breakNum}</h5>
+								</div>
+								<div className="">
+									<img src={arrowDown} id="break-decrement" alt="break down" className="button" onClick={this.onClick} />
+								</div>
 							</div>
-							<div className="">
-								<h5 id="break-label" style={{fontSize: "32px"}}>Break Length</h5>
+							<div className="col-xs-6 action">
+								<audio id="beep">
+									<source src={beep} type="audio/mpeg" />
+								</audio>
+								<div>
+									<i className="fas fa-step-forward fa-2x" id="start_stop" onClick={this.onClick}></i>
+									<i className="fas fa-undo fa-2x" id="reset" onClick={this.onClick}></i>
+								</div>
 							</div>
-							<div>
-								<h5 id="break-length" style={{fontSize: "32px"}}>{this.state.breakNum}</h5>
-							</div>
-							<div className="">
-								<img src={arrowDown} id="break-decrement" alt="break down" className="button" onClick={this.onClick} />
+							<div className="col-xs-3" style={{ pointerEvents: this.state.isStarted ? "none" : "auto" }}>
+								<div>
+									<img src={arrowUp} id="session-increment" alt="session up" className="button" onClick={this.onClick} />
+								</div>
+								<div>
+									<h5 id="session-label" style={{ fontSize: "32px" }}>Session Length</h5>
+								</div>
+								<div>
+									<h5 id="session-length" style={{ fontSize: "32px" }}>{this.state.sessionNum}</h5>
+								</div>
+								<div>
+									<img src={arrowDown} id="session-decrement" alt="session down" className="button" onClick={this.onClick} />
+								</div>
 							</div>
 						</div>
-						<div className="col-xs-4">
+						<div>
 							<br />
-							<br />
-							<br />
-							<br />
-							<audio id="beep">
-								<source src={beep} type="audio/mpeg" />
-							</audio>
-							<div>
-								<i className="fas fa-step-forward fa-2x" id="start_stop" onClick={this.onClick}></i>
-								<i className="fas fa-undo fa-2x" id="reset" onClick={this.onClick}></i>
-							</div>
+							<h5 style={{ fontSize: "32px" }}>Made with <i class="far fa-heart fa-xs"></i> by Daniel Mimoun</h5>
 						</div>
-						<div className="col-xs-4" style={{ pointerEvents: this.state.isStarted ? "none" : "auto" }}>
-							<div>
-								<img src={arrowUp} id="session-increment" alt="session up" className="button" onClick={this.onClick} />
-							</div>
-							<div>
-								<h5 id="session-label" style={{fontSize: "32px"}}>Session Length</h5>
-							</div>
-							<div>
-								<h5 id="session-length" style={{fontSize: "32px"}}>{this.state.sessionNum}</h5>
-							</div>
-							<div>
-								<img src={arrowDown} id="session-decrement" alt="session down" className="button" onClick={this.onClick} />
-							</div>
-						</div>
-					</div>
-					<div>
-						<br />
-						<h5 style={{fontSize: "32px"}}>Made with <i class="far fa-heart fa-xs"></i> by Daniel Mimoun</h5>
 					</div>
 				</header>
 			</div>
