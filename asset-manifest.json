@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/Pomodoro-Clock/static/css/main.5a9b54d2.chunk.css",
-    "main.js": "/Pomodoro-Clock/static/js/main.9079c25f.chunk.js",
-    "main.js.map": "/Pomodoro-Clock/static/js/main.9079c25f.chunk.js.map",
+    "main.css": "/Pomodoro-Clock/static/css/main.8b7d95a9.chunk.css",
+    "main.js": "/Pomodoro-Clock/static/js/main.4439ceb0.chunk.js",
+    "main.js.map": "/Pomodoro-Clock/static/js/main.4439ceb0.chunk.js.map",
     "runtime-main.js": "/Pomodoro-Clock/static/js/runtime-main.fdf2b879.js",
     "runtime-main.js.map": "/Pomodoro-Clock/static/js/runtime-main.fdf2b879.js.map",
-    "static/js/2.7c8ed970.chunk.js": "/Pomodoro-Clock/static/js/2.7c8ed970.chunk.js",
-    "static/js/2.7c8ed970.chunk.js.map": "/Pomodoro-Clock/static/js/2.7c8ed970.chunk.js.map",
+    "static/js/2.62118eac.chunk.js": "/Pomodoro-Clock/static/js/2.62118eac.chunk.js",
+    "static/js/2.62118eac.chunk.js.map": "/Pomodoro-Clock/static/js/2.62118eac.chunk.js.map",
     "index.html": "/Pomodoro-Clock/index.html",
-    "precache-manifest.523e41bf347e44811c268e09a8be1180.js": "/Pomodoro-Clock/precache-manifest.523e41bf347e44811c268e09a8be1180.js",
+    "precache-manifest.fd768c79d12fbfe9f545c80ffd321551.js": "/Pomodoro-Clock/precache-manifest.fd768c79d12fbfe9f545c80ffd321551.js",
     "service-worker.js": "/Pomodoro-Clock/service-worker.js",
-    "static/css/main.5a9b54d2.chunk.css.map": "/Pomodoro-Clock/static/css/main.5a9b54d2.chunk.css.map",
-    "static/js/2.7c8ed970.chunk.js.LICENSE": "/Pomodoro-Clock/static/js/2.7c8ed970.chunk.js.LICENSE",
-    "static/media/beep.mp3": "/Pomodoro-Clock/static/media/beep.9bdca1db.mp3"
+    "static/css/main.8b7d95a9.chunk.css.map": "/Pomodoro-Clock/static/css/main.8b7d95a9.chunk.css.map",
+    "static/js/2.62118eac.chunk.js.LICENSE": "/Pomodoro-Clock/static/js/2.62118eac.chunk.js.LICENSE",
+    "static/media/beep.mp3": "/Pomodoro-Clock/static/media/beep.9bdca1db.mp3",
+    "static/media/App.css": "/Pomodoro-Clock/static/media/wallpaper.a9c3ef76.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.fdf2b879.js",
-    "static/js/2.7c8ed970.chunk.js",
-    "static/css/main.5a9b54d2.chunk.css",
-    "static/js/main.9079c25f.chunk.js"
+    "static/js/2.62118eac.chunk.js",
+    "static/css/main.8b7d95a9.chunk.css",
+    "static/js/main.4439ceb0.chunk.js"
   ]
 }
