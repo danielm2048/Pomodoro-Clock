@@ -1,26 +1,20 @@
 .App {
   text-align: center;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-image: url("./pics/wallpaper.jpg");
 }
 
 .App-header {
-  background-color: #2d426b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-family: 'Italianno', cursive, bold;
+  color: black;
+  font-family: "Italianno", cursive, bold;
 }
 
 #time-left {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 .box {
@@ -28,6 +22,7 @@
   border-width: 3px;
   border-style: solid;
   border-radius: 15px;
+  background-color: darkgray;
 }
 
 .action {
@@ -44,6 +39,7 @@
   }
 }
 
-.App-link {
-  color: #61dafb;
+h5 {
+  font-size: 32px;
+  margin: 1.5rem;
 }
